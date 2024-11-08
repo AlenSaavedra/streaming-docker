@@ -1,27 +1,28 @@
 # Streaming Docker
 
-Este proyecto configura una aplicación de streaming utilizando Docker y Nginx. Está diseñado para facilitar el despliegue y gestión de servicios de streaming en un entorno de desarrollo o en producción.
+This project sets up a streaming application using Docker and Nginx. It is designed to simplify the deployment and management of streaming services in both development and production environments.
 
-## Estructura del Proyecto
+## Project Structure
 
-- `.env`: Archivo de variables de entorno (no debe compartirse públicamente).
-- `.env.example`: Ejemplo para crear el archivo `.env` con variables necesarias.
-- `docker-compose.yml`: Archivo de configuración para el despliegue con Docker Compose.
-- `config/nginx.conf`: Configuración principal de Nginx para enrutamiento y proxy.
-- `certs/`: Certificados y parámetros de seguridad, incluyendo `dhparam.pem` para SSL/TLS.
-- `web/`: Carpeta principal de la aplicación web.
-  - `web/config/nginx.conf`: Configuración de Nginx específica de la aplicación.
-  - `web/public/index.html`: Archivo de entrada de la interfaz web.
+- `.env`: Environment variables file (should not be shared publicly).
+- `.env.example`: Example file for creating the `.env` file with required variables.
+- `docker-compose.yml`: Configuration file for deployment using Docker Compose.
+- `config/nginx.conf`: Main Nginx configuration for routing and proxy settings.
+- `certs/`: Security certificates and parameters, including `dhparam.pem` for SSL/TLS.
+- `web/`: Main folder for the web application.
+  - `web/config/nginx.conf`: Nginx configuration specific to the application.
+  - `web/public/index.html`: Entry file for the web interface.
 
-## Requisitos
+## Requirements
 
-- **Docker** y **Docker Compose** instalados en tu máquina.
-- Crear un archivo `.env` basado en `.env.example` y configurar las variables necesarias.
+- **Docker** and **Docker Compose** installed on your machine.
+- Create an `.env` file based on `.env.example` and configure the necessary variables.
 
-## Uso
+## Usage
 
-1. **Clonar el repositorio**:
+1. **Clone the repository**:
 
    ```bash
    git clone https://github.com/AlenSaavedra/streaming-docker
    cd streaming-docker
+   ```
